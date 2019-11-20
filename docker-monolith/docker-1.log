@@ -1,0 +1,6 @@
+serge@otus-microservices:~/otus/SergeiAvchinnikov_microservices$ docker images
+REPOSITORY                         TAG                 IMAGE ID            CREATED             SIZE
+sergeavchinnikov/ubuntu-tmp-file   latest              2da14d83aff7        32 seconds ago      123MB
+ubuntu                             16.04               5f2bf26e3524        2 weeks ago         123MB
+hello-world                        latest              fce289e99eb9        10 months ago       1.84kB
+
