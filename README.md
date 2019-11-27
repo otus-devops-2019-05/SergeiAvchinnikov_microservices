@@ -4,7 +4,7 @@ SergeiAvchinnikov microservices repository
 - [Docker контейнеры. Docker под капотом (docker-2)](#docker-2)
 - [Docker-образы. Микросервисы. (docker-3)](#docker-3)
 - [Сетевое взаимодействие Docker контейнеров. Docker Compose. Тестирование образов. (docker-4)](#docker-4)
-
+- [Устройство Gitlab CI. Построение процесса непрерывной поставки. (gitlab-ci-1)](#gitlab-ci-1)
 
 ## <a name="docker-2"></a>Docker контейнеры. Docker под капотом (docker-2)
 + устанавливаем докер
@@ -29,3 +29,9 @@ SergeiAvchinnikov microservices repository
   + автоматически создается по имени папки в которой расположен docker-compose.yml
   + можно установить через  переменную окружения `export COMPOSE_PROJECT_NAME=foo`
   + или параметром `-p` при вызове : `docker-compose -p foo build`
+
+## <a name="gitlab-ci-1"></a>Устройство Gitlab CI. Построение процесса непрерывной поставки. (gitlab-ci-1)
++ Создание WM, и установка gitlab-ci
++ Подготовка репозитория с кодом приложения
++ Описание этапов пайплайна
++ Определение окружений
