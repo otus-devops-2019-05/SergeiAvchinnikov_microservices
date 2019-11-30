@@ -8,7 +8,6 @@ SergeiAvchinnikov microservices repository
 - [Введение в мониторинг. Системы мониторинга.(monitoring-1)](#monitoring-1)
 - [Мониторинг приложения и инфраструктуры. (monitoring-2)](#monitoring-2)
 
-
 ## <a name="docker-2"></a>Docker контейнеры. Docker под капотом (docker-2)
 + устанавливаем докер
 + запускаем контейнеры изучаем команды
@@ -51,3 +50,4 @@ SergeiAvchinnikov microservices repository
 + выполнен сбор метрик работы приложения и бизнес метрик
 + выполнена настройка и проверка алертинга с отправкой оповещений в Slack
 + Ссылка на докерхаб: https://hub.docker.com/u/sergeav
+
