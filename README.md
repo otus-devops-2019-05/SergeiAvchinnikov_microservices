@@ -6,6 +6,7 @@ SergeiAvchinnikov microservices repository
 - [Сетевое взаимодействие Docker контейнеров. Docker Compose. Тестирование образов. (docker-4)](#docker-4)
 - [Устройство Gitlab CI. Построение процесса непрерывной поставки. (gitlab-ci-1)](#gitlab-ci-1)
 - [Введение в мониторинг. Системы мониторинга.(monitoring-1)](#monitoring-1)
+- [Мониторинг приложения и инфраструктуры. (monitoring-2)](#monitoring-2)
 
 
 ## <a name="docker-2"></a>Docker контейнеры. Docker под капотом (docker-2)
@@ -42,4 +43,11 @@ SergeiAvchinnikov microservices repository
 + Prometheus: запуск, конфигурация, знакомство с Web UI
 + Мониторинг состояния микросервисов
 + Сбор метрик хоста с использованием экспортера 
++ Ссылка на докерхаб: https://hub.docker.com/u/sergeav
+
+## <a name="monitoring-2"></a>Мониторинг приложения и инфраструктуры. (monitoring-2)
++ настроен мониторинг Docker контейнеров cAdvisor
++ настроена визуализация метрик  grafana
++ выполнен сбор метрик работы приложения и бизнес метрик
++ выполнена настройка и проверка алертинга с отправкой оповещений в Slack
 + Ссылка на докерхаб: https://hub.docker.com/u/sergeav
