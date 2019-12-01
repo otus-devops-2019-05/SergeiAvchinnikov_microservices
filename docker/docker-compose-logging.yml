@@ -1,0 +1,47 @@
+version: '3'
+services:
+  zipkin:
+    image: openzipkin/zipkin
+    ports:
+      - "9411:9411"
+    networks:
+      - back_net
+  fluentd:
+    image: ${USER_NAME}/fluentd
+    ports:
+      - "24224:24224"
+      - "24224:24224/udp"
+    networks:
+      - back_net
+      - front_net
+
+  elasticsearch:
+    image: elasticsearch:7.3.1
+    container_name: elasticsearch
+    environment:
+      - node.name=elasticsearch
+      - discovery.type=single-node
+    expose:
+      - 9200
+    volumes:
+      - elasticsearch-data:/usr/share/elasticsearch/data
+    ports:
+      - "9200:9200"
+    networks:
+      - back_net
+
+  kibana:
+    image: kibana:7.3.1
+    environment:
+      XPACK_SECURITY_ENABLED: "false"
+      ELASTICSEARCH_URL: "http://elasticsearch:9200"
+    ports:
+      - "5601:5601"
+    networks:
+      - back_net
+volumes:
+  elasticsearch-data:
+networks:
+  back_net:
+  front_net:
+
