@@ -7,6 +7,7 @@ SergeiAvchinnikov microservices repository
 - [Устройство Gitlab CI. Построение процесса непрерывной поставки. (gitlab-ci-1)](#gitlab-ci-1)
 - [Введение в мониторинг. Системы мониторинга.(monitoring-1)](#monitoring-1)
 - [Мониторинг приложения и инфраструктуры. (monitoring-2)](#monitoring-2)
+- [Введение в Kubernetes. (kubernetes-1)](#kubernetes-1)
 
 ## <a name="docker-2"></a>Docker контейнеры. Docker под капотом (docker-2)
 + устанавливаем докер
@@ -51,3 +52,6 @@ SergeiAvchinnikov microservices repository
 + выполнена настройка и проверка алертинга с отправкой оповещений в Slack
 + Ссылка на докерхаб: https://hub.docker.com/u/sergeav
 
+## <a name="kubernetes-1"></a>Введение в Kubernetes. (kubernetes-1)
++ Разобраны на практике все компоненты Kubernetes, развернуты вручную используя The Hard Way;
++ Ознакоммлен с описанием основных примитивов приложения reddit.Проверен запуск в развернутом на предыдущем шаге Kubernetes
