@@ -10,18 +10,30 @@ services:
           - post_db
           - comment_db
   ui:
-    image: ${USER_NAME}/ui:${VER}
+    image: ${USER_NAME}/ui:${TAG}
     ports:
       - ${PORT}:${PORT}/tcp
     networks:
       - front_net
   post:
-    image: ${USER_NAME}/post:${VER}
+    image: ${USER_NAME}/post
+    environment:
+      - POST_DATABASE_HOST=post_db
+      - POST_DATABASE=posts
+    depends_on:
+      - post_db
+    ports:
+      - "5000:5000"
+    logging:
+      driver: "fluentd"
+      options:
+        fluentd-address: localhost:24224
+        tag: service.post
     networks:
       - back_net
       - front_net
   comment:
-    image: ${USER_NAME}/comment:${VER}
+    image: ${USER_NAME}/comment:${TAG}
     networks:
       - back_net
       - front_net
